@@ -1,0 +1,280 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+	background-color: #111;
+}
+
+
+.navbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 5px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	background-color: #212529;
+	border-bottom: 1px solid #2e3136;
+}	
+	.logo{
+		width: 100px;
+	}
+
+	.search{
+	position: relative;
+	width: 330px;
+	height: 40px;
+	background-color: rgb(192, 192, 192, 0.2);
+	border-radius: 50px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	}
+		.search:hover{
+			background-color: rgb(192, 192, 192, 0.5);
+		}
+
+			.fa-search, .fa-times{
+				width: 20px;
+				height: 20px;
+				margin: 0 15px;
+				cursor: pointer;
+			}
+
+			.fa-bars{
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+			}
+
+			.fa-times {
+				visibility: hidden;
+			}
+
+			.search input{
+				border: none;
+				outline: none;
+				height: 100%;
+				width: 70%;
+				font-size: 17px;
+				color: white;
+				background-color: transparent;
+			}
+
+
+
+
+
+
+.showcase{
+	position: relative;
+	margin-top: 40px;
+	width: 100%;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+	.showcase:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0,0,0,.4);
+	}
+
+		.serie-logo{
+			position: relative;
+			width: 40%;
+			margin-left: 25px;
+		}
+
+		.text-info{
+			position: relative;
+			padding: 0 25px;
+			width: 40%;
+			height: auto;
+			color: #fff;
+		}	
+			.subtitle{
+				margin: 30px 0 15px 0;
+			}
+			.paragraph{
+				margin: 20px 0 ;
+			}
+			.text-info span{
+				color: #bbb;
+			}
+			.under-btn{
+				border: 1px solid #bbb;
+				padding: 0 4px;
+			}
+
+			.play-btn{
+				display: inline-block;
+				text-decoration: none;
+				color: #000;
+				background-color: #fff;
+				padding: 8px 20px;
+				margin: 15px 10px 0 0;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+			.info-btn{
+				display: inline-block;
+				text-decoration: none;
+				color: #fff;
+				background-color: #ba181b;
+				padding: 8px 20px;
+				margin: 15px 10px 0 0;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+
+
+
+
+.social-box{
+    padding: 10px 25px;
+    display: inline-block;
+    color: #fff;
+}
+.link-i{
+	display: flex;
+	background-color: rgba(255, 0, 0, .4);
+	line-height: 1.5;
+	padding: 5px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.fa-fire-alt {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+.box-title{
+	width: 100%;
+	color: #fff;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin: 0 0 15px 0;
+	letter-spacing: 1.4px;
+	padding: 5px 25px;
+}
+	.content-title span{
+		display: flex;
+		align-items: center;
+	}
+
+.flag{
+	width: 27px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+.content{
+	position: relative;
+	width: 100%;
+	margin: 50px 0;
+	padding: 0 25px 0 25px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0;
+}
+
+	.episodio{
+		cursor: pointer;
+		width: 32%;
+		height: 330px;
+		margin: 0 10px 15px 0;
+		color: #fff;
+	}
+		.episodio-titulo{
+			font-size: 15px;
+			padding: 0 5px;
+		}
+
+		.episodio-sipnosis{
+			font-size: 14px;
+			color: #bbb;
+			padding: 0 5px;
+		}
+
+		.episodio img{
+			width: 100%;
+			height: 70%;
+		}
+
+
+
+
+.recomendaciones-title{
+
+}
+
+.recomendaciones{
+	width: 100%;
+	height: auto;
+	margin: 50px 0;
+	padding: 0 25px;
+}
+
+.recomendaciones-item{
+	width: 100%;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.box-item{
+	width: 20%;
+	height: 350px;
+	margin: 5px 5px 5px 0;
+	border-radius: 5px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.poster-title{
+	display: inline-block;
+}
+
+.box-item img{
+	width: 100%;
+	height: 85%;
+}
+
+
+
+.iframe{
+	display: none;
+	position: fixed; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%; 
+	height: 500px;
+}
+
+iframe{
+	width: inherit;
+	height: inherit;
+	border: none;
+}
